@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run Wild</title>
+    <style>
+        #top { text-align: center; }
+        #all{ 
+             align-items:center;
+            justify-content:center;}
+        #userinput{margin-left:auto;
+                margin-rght:auto;}
+        #output{margin-top:9px;
+                margin-left:auto;
+                margin-rght:auto;}
+        
+    </style>
+</head>
+<body>
+    <h1 id="top">This is a project</h1>
+    <p style="text-align:center;">created by me</p>
+<div id="all" >
+ <label>cm: <input type="number" id="userinput" name="user" /></label></br>
+ <label>inch: <input type="number" id="output" name="out" /></label>
+</div>
+
+    <script>
+ const input = document.getElementById("userinput");
+input.onkeyup = function() {
+       const user = document.getElementById("userinput").value;
+            const output = document.getElementById("output");
+            const sum = user * 2; 
+            output.value = sum;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
